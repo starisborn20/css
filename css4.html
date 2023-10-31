@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        div.gallery {
+            border: 1px solid #ccc;
+        }
+
+        div.gallery:hover {
+            border: 1px solid #777;
+        }
+
+        div.gallery img {
+            width: 100%;
+            height: auto;
+        }
+
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+
+        @media only screen and (max-width: 700) {
+            .responsive {
+                width: 49.9999%;
+                margin: 6px 0;
+            }
+        }
+        @media only screen and (max-width: 500px){
+            .responsive {
+                width: 100px;
+            }
+        }
+
+      
+    </style>
+</head>
+<body>
+
+    <div class="responsive">
+        <div class="gallery">
+            <img src="images/i1.jpg" width="600" height="400" alt="">
+
+            <div class="desc">Add a description here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <img src="images/i2.jpg" width="600" height="400" alt="">
+
+            <div class="desc">Add a description here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <img src="images/i3.jpg" width="600" height="400" alt="">
+
+            <div class="desc">Add a description here</div>
+        </div>
+    </div>
+
+    <div class="responsive">
+        <div class="gallery">
+            <img src="images/i4.jpg" width="600" height="400" alt="">
+
+            <div class="desc">Add a description here</div>
+        </div>
+    </div>
+    
+</body>
+</html>
